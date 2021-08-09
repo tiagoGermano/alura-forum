@@ -9,13 +9,17 @@ public class HelloController {
 	
 	@RequestMapping("/")
 	@ResponseBody
-	public String hello() {
-		return "hello stranger";
-	}
-
-	@RequestMapping("/test")
-	@ResponseBody
-	public void teste() {
-		
+	public String home() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("<h1>alura-fourm REST API<h1/>");
+		sb.append("<h3>Topicos</h3>");
+		sb.append("<ul>");
+			sb.append("<li><strong>GET</strong> /topicos - buscar todos tópicos</li>");
+			sb.append("<li><strong>GET</strong> /topicos/{id} - buscar topico pelo id</li>");
+			sb.append("<li><strong>POST</strong> /topicos - salvar topico</li>");
+			sb.append("<li><strong>PUT</strong> /topicos/{id} - editar topico</li>");
+			sb.append("<li><strong>DELETE</strong> /topicos/{id} - deletar topico</li>");
+		sb.append("</ul>");
+		return sb.toString();
 	}
 }
