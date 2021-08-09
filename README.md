@@ -20,6 +20,8 @@ Após importando, bastar executar a classe _br.com.alura.forum.ForumApplication_
 
 ## Acessando o projeto
 
-Na página _home_ com os serviços disponíveis:
+O projeto está configurado para rodar no banco H2 que é um banco em memória, logo não é necessário nenhuma configuração extra ;)
+
+Página _home_ com os serviços disponíveis:
 ![localhost](https://user-images.githubusercontent.com/2064853/128651195-5345db80-1bd5-4f35-9c22-50c83564914d.jpg)
 
