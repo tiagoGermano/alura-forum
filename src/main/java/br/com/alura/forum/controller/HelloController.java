@@ -11,7 +11,7 @@ public class HelloController {
 	@ResponseBody
 	public String home() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("<h1>alura-fourm REST API<h1/>");
+		sb.append("<h1>alura-forum REST API<h1/>");
 		sb.append("<h3>Topicos</h3>");
 		sb.append("<ul>");
 			sb.append("<li><strong>GET</strong> /topicos - buscar todos tópicos</li>");
